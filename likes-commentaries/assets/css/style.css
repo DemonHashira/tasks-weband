@@ -1,0 +1,27 @@
+/* Sample css to illustrate a friendly form.
+   As extravagant design is not needed as described 
+   from the teask
+ */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 20%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.like-icon {
+  color: grey;
+}
+.liked {
+  color: blue;
+}
