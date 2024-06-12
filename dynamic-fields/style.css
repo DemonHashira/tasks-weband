@@ -1,0 +1,43 @@
+/* Sample css to illustrate a friendly form.
+   As extravagant design is not needed as described 
+   from the teask
+ */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 20%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label,
+input,
+select,
+textarea {
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  padding: 5px;
+  font-size: 1em;
+}
+
+#invoiceFields,
+#messageFields,
+#requestFields,
+#extractFields {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}

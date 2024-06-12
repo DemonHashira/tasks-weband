@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Fields</title>
+    <link rel="stylesheet" href="../dynamic-fields/style.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <label for="name">Име:</label>
+        <input type="text" id="name" name="name" placeholder="Въведете име" />
+        <label for="type">Тип:</label>
+
+        <select id="type" name="select-option">
+          <option value="" selected disabled hidden>Моля избери...</option>
+          <option value="invoice">Фактура</option>
+          <option value="message">Съобщение</option>
+          <option value="request">Заявка</option>
+          <option value="extract">Извличане</option></select
+        ><br />
+
+        <div id="invoiceFields">
+          <label for="price">Цена:</label><br />
+          <input type="text" id="price" name="price" /><br />
+          <label for="companyName">Име на фирма:</label><br />
+          <input type="text" id="companyName" name="companyName" /><br />
+          <label for="vat">ДДС процент:</label><br />
+          <input type="text" id="vat" name="vat" /><br />
+        </div>
+
+        <div id="messageFields">
+          <label for="for">За:</label><br />
+          <input type="text" id="for" name="for" /><br />
+          <label for="message">Съобщение:</label><br />
+          <textarea id="message" name="message"></textarea><br />
+        </div>
+
+        <div id="requestFields">
+          <label for="city">Град:</label><br />
+          <input type="text" id="city" name="city" /><br />
+          <label for="street">Улица:</label><br />
+          <input type="text" id="street" name="street" /><br />
+          <label for="number">Номер:</label><br />
+          <input type="text" id="number" name="number" /><br />
+        </div>
+
+        <div id="extractFields">
+          <label for="from">От:</label><br />
+          <input type="text" id="from" name="from" /><br />
+          <label for="to">До:</label><br />
+          <input type="text" id="to" name="to" /><br />
+          <label for="amount">Сума:</label><br />
+          <input type="text" id="amount" name="amount" /><br />
+        </div>
+      </form>
+    </main>
+    <script src="../dynamic-fields/script.js"></script>
+  </body>
+</html>
