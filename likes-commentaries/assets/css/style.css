@@ -1,4 +1,4 @@
-/* Sample css to illustrate a friendly form.
+/* Sample css to illustrate a friendly somewhat blog post.
    As extravagant design is not needed as described 
    from the teask
  */
@@ -11,7 +11,8 @@ main {
   width: 25%;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
 }
 
 img {
@@ -23,6 +24,10 @@ img {
   text-align: center;
 }
 
+.title-color {
+  color: #02a7df;
+}
+
 .post-text {
   font-size: 18px;
   line-height: 1.6;
@@ -31,26 +36,7 @@ img {
   text-align: justify;
 }
 
-.like-button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.like-button i.far.fa-heart {
-  color: grey;
-}
-
-.like-button i.fas.fa-heart {
-  color: #ff2f40;
-}
-
-.like-button:hover i.far.fa-heart {
-  color: black;
-}
-
+.like-button,
 .comment-icon-button {
   background: none;
   border: none;
@@ -59,12 +45,18 @@ img {
   transition: color 0.3s ease;
 }
 
+.like-button i.far.fa-heart,
 .comment-icon-button i.far.fa-comment {
   color: grey;
 }
 
+.like-button:hover i.far.fa-heart,
 .comment-icon-button:hover i.far.fa-comment {
   color: black;
+}
+
+.like-button i.fas.fa-heart {
+  color: #ff2f40;
 }
 
 .comment-button {
@@ -90,6 +82,17 @@ img {
   border-radius: 20px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  margin: 10px 0 10px;
+  margin: 10px 0;
   resize: vertical;
+}
+
+.comments-display {
+  max-width: 600px;
+  margin: 20px 0 10px;
+  padding: 5px 0 10px 10px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  color: #333;
 }

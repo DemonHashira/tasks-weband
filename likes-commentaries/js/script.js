@@ -3,6 +3,7 @@
   window.onload = function () {
     initializeLikeButton();
     initializeCommentButton();
+    postComment();
   };
 })();
 
@@ -17,6 +18,21 @@ function initializeLikeButton() {
   });
 }
 
+// Function to post a comment
+function postComment() {
+  var commentButton = document.querySelector(".comment-button");
+  commentButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    var commentInput = document.querySelector(".comment-input");
+    var commentsDisplay = document.querySelector(".comments-display");
+    var newComment = document.createElement("p");
+    newComment.textContent = commentInput.value;
+    commentsDisplay.appendChild(newComment);
+    commentInput.value = "";
+  });
+}
+
+// Function to toggle the state of the comment section when the comment button is clicked
 function initializeCommentButton() {
   document.querySelector(".comment-section").style.display = "none";
   var commentButton = document.querySelector(".comment-icon-button");
