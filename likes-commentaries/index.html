@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Post</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
   </head>
   <body>
     <main>
-      <h1 class="title">Boruto Two</h1>
-      <p>Blog post content...</p>
-      <i class="like-icon">👍</i>
-      <div id="comments"></div>
-      <textarea id="comment-input"></textarea>
-      <button id="comment-button">Post Comment</button>
+      <h1 class="title">Boruto: Two Blue Vortex</h1>
+      <h2 class="title">Released it's first chapter!</h2>
+      <img src="../likes-commentaries/assets/images/boruto_pic.jpeg" alt="" />
+      <p class="post-text">
+        With everyone's memories having been altered, Boruto finds himself being
+        hunted by his own village. After escaping with Sasuke, what future
+        awaits Boruto...?
+      </p>
+      <section class="blog-actions">
+        <button class="like-button" class="like-icon" type="submit">
+          <i class="far fa-heart"></i>
+        </button>
+        <textarea
+          id="comment-input"
+          placeholder="Enter your comment here..."
+        ></textarea>
+        <button class="comment-button">Post Comment</button>
+      </section>
     </main>
     <script src="../likes-commentaries/js/script.js"></script>
   </body>
