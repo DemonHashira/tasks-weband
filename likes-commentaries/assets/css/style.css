@@ -51,6 +51,22 @@ img {
   color: black;
 }
 
+.comment-icon-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.comment-icon-button i.far.fa-comment {
+  color: grey;
+}
+
+.comment-icon-button:hover i.far.fa-comment {
+  color: black;
+}
+
 .comment-button {
   background-color: #008cba;
   color: white;
@@ -64,4 +80,16 @@ img {
 
 .comment-button:hover {
   background-color: #005f6b;
+}
+
+.comment-input {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 10px 0 10px;
+  resize: vertical;
 }

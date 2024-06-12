@@ -2,6 +2,7 @@
 (function () {
   window.onload = function () {
     initializeLikeButton();
+    initializeCommentButton();
   };
 })();
 
@@ -13,5 +14,15 @@ function initializeLikeButton() {
     icon.classList.toggle("far");
     icon.classList.toggle("fas");
     icon.classList.toggle("liked");
+  });
+}
+
+function initializeCommentButton() {
+  document.querySelector(".comment-section").style.display = "none";
+  var commentButton = document.querySelector(".comment-icon-button");
+  commentButton.addEventListener("click", function () {
+    var commentSection = document.querySelector(".comment-section");
+    commentSection.style.display =
+      commentSection.style.display === "none" ? "block" : "none";
   });
 }
