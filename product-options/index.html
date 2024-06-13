@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Options</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 class="title">
+          iPhone <span class="title-color">14 Pro Max</span>
+        </h1>
+        <i><h2 class="title">Just Released!</h2></i>
+        <img src="assets/images/14ProMaxPurple.jpeg" alt="" />
+        <p class="post-text">
+          The iPhone 14 Pro Max features a Super Retina XDR OLED display with a
+          typical maximum brightness of 1,000 nits. However, it can go all the
+          way up to 1,600 nits while watching HDR videos, and 2,000 nits
+          outdoors. The display has a refresh rate of 120 Hz and uses LTPO
+          technology.
+        </p>
+        <h3>Color:</h3>
+        <label>
+          <input type="radio" name="color" value="silver" /> Silver
+        </label>
+        <label>
+          <input type="radio" name="color" value="spaceBlack" /> Space Black
+        </label>
+        <label> <input type="radio" name="color" value="gold" /> Gold </label>
+        <label>
+          <input type="radio" name="color" value="deepPurple" /> Deep Purple
+        </label>
+
+        <h3>Size:</h3>
+        <label> <input type="radio" name="size" value="128gb" /> 128GB </label>
+        <label> <input type="radio" name="size" value="256gb" /> 256GB </label>
+        <label> <input type="radio" name="size" value="512gb" /> 512GB </label>
+        <label> <input type="radio" name="size" value="1tb" /> 1TB </label>
+        <p id="price"></p>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>

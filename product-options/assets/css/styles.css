@@ -1,0 +1,46 @@
+/* Sample css to illustrate a friendly somewhat product description.
+   As extravagant design is not needed as described 
+   from the teask
+ */
+
+body {
+  font-family: Sans-Serif;
+}
+
+main {
+  width: 25%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+label {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-color {
+  color: #5e5566;
+}
+
+.post-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: 20px 0;
+  text-align: justify;
+}
