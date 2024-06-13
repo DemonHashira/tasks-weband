@@ -20,12 +20,17 @@ img {
   height: auto;
 }
 
-.title {
+.title,
+.title-italic {
   text-align: center;
 }
 
 .title-color {
   color: #02a7df;
+}
+
+.title-italic {
+  font-style: italic;
 }
 
 .post-text {
