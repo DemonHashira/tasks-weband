@@ -12,11 +12,11 @@
         <h1 class="title">
           iPhone <span class="title-color">14 Pro Max</span>
         </h1>
-        <i><h2 class="title">Just Released!</h2></i>
+        <h2 class="title-italic">Just Released!</h2>
         <img
           id="product-image"
           src="assets/images/14ProMaxDeepPurple.jpeg"
-          alt=""
+          alt="iPhone 14 Pro Max"
         />
         <p class="post-text">
           The iPhone 14 Pro Max features a Super Retina XDR OLED display with a
@@ -25,23 +25,34 @@
           outdoors. The display has a refresh rate of 120 Hz and uses LTPO
           technology.
         </p>
-        <h3>Color:</h3>
-        <label>
-          <input type="radio" name="color" value="silver" /> Silver
-        </label>
-        <label>
-          <input type="radio" name="color" value="spaceBlack" /> Space Black
-        </label>
-        <label> <input type="radio" name="color" value="gold" /> Gold </label>
-        <label>
-          <input type="radio" name="color" value="deepPurple" /> Deep Purple
-        </label>
 
-        <h3>Size:</h3>
-        <label> <input type="radio" name="size" value="128gb" /> 128GB </label>
-        <label> <input type="radio" name="size" value="256gb" /> 256GB </label>
-        <label> <input type="radio" name="size" value="512gb" /> 512GB </label>
-        <label> <input type="radio" name="size" value="1tb" /> 1TB </label>
+        <fieldset>
+          <legend>Color:</legend>
+          <label>
+            <input type="radio" name="color" value="silver" /> Silver
+          </label>
+          <label>
+            <input type="radio" name="color" value="spaceBlack" /> Space Black
+          </label>
+          <label> <input type="radio" name="color" value="gold" /> Gold </label>
+          <label>
+            <input type="radio" name="color" value="deepPurple" /> Deep Purple
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Size:</legend>
+          <label>
+            <input type="radio" name="size" value="128gb" /> 128GB
+          </label>
+          <label>
+            <input type="radio" name="size" value="256gb" /> 256GB
+          </label>
+          <label>
+            <input type="radio" name="size" value="512gb" /> 512GB
+          </label>
+          <label> <input type="radio" name="size" value="1tb" /> 1TB </label>
+        </fieldset>
         <p id="price"></p>
       </section>
     </main>

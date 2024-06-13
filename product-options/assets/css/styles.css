@@ -1,6 +1,6 @@
 /* Sample css to illustrate a friendly somewhat product description.
    As extravagant design is not needed as described 
-   from the teask
+   from the task
  */
 
 body {
@@ -9,7 +9,7 @@ body {
 
 main {
   width: 25%;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
@@ -25,16 +25,30 @@ label {
   cursor: pointer;
 }
 
-h3 {
-  margin-top: 20px;
+fieldset {
+  border: 2px solid #2c3e50;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
 }
 
-.title {
+legend {
+  padding: 0 10px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.title,
+.title-italic {
   text-align: center;
 }
 
 .title-color {
   color: #5e5566;
+}
+
+.title-italic {
+  font-style: italic;
 }
 
 .post-text {
