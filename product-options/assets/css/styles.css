@@ -40,7 +40,12 @@ h3 {
 .post-text {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
   margin: 20px 0;
   text-align: justify;
+}
+
+#price {
+  font-weight: bold;
+  font-size: 1.17em;
+  margin-top: 20px;
 }
